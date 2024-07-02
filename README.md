@@ -49,7 +49,7 @@ The following parameters can optionally be added to the config.
   
 #### 2. Cat
 - Key: cat
-- Type: string
+- Type: string (catId) or number (rescueIndex)
 - Values: catId (0x0012345678) or rescueIndex (0–25439)
 - Example: `"filter": "specific", "cat": "0x00d51b8121"`
 - Notes:
@@ -60,7 +60,7 @@ The following parameters can optionally be added to the config.
 - Key: cats
 - Type: string or array of strings
 - Values: catId (0x0012345678) or rescueIndex (0–25439)
-- Example: `"filter": "specific", "cats": "[392, 0x00d8523a53]"`
+- Example: `"filter": "specific", "cats": [392, "0x00d8523a53"]`
 - Notes:
   - filter parameter must include or equal "specific" otherwise this parameter is ignored
   - if there is also a "cat" parameter, "cats" is ignored
@@ -123,3 +123,14 @@ A longer configuration could look likes this (with actual wallet ids):
 }
 ```
 This would randomly display a cat from one of the two wallets or a genesis cat.
+
+#### Specific Cat
+```json
+{
+  "moralisApiKey": "YOUR_API_KEY",
+  "background": "black",
+  "filter": "specific",
+  "cat": 392
+}
+```
+This will always show the same magnificent cat.
