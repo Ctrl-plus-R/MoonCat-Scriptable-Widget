@@ -128,7 +128,6 @@ This would randomly display a cat from one of the two wallets or a genesis cat.
 ```json
 {
   "moralisApiKey": "YOUR_API_KEY",
-  "background": "black",
   "filter": "specific",
   "cat": 392
 }
