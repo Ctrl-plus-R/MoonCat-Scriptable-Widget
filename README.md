@@ -1,23 +1,30 @@
 # MoonCat-Scriptable-Widget
-an IOS widget programmed with Scriptable that shows a different random MoonCat based on user-defined filters in each widget refresh loop
+IOS widget programmed with [Scriptable](https://scriptable.app/) that shows a different random MoonCat based on user-defined filters in each widget refresh loop
+
+## General
+You can have several widgets at once with different settings.
+Each widget can show a specific cat, switch between a selection or even change randomly.
+Wallets can also be specified to define the selection of cats. 
+iOS takes care of updating the widgets independently.
+You can also set a background for the widget.
 
 ## Requirements
 - device with iOS
-- Scriptable app
+- installed [Scriptable app](https://scriptable.app/)
 - Moralis account with API key
 
 ## Setup
 1. add mooncat-scriptable-widget.js to Scriptable app
-  - either by pressing the plus icon in the Scriptable App and copy, paste the code
-  - or by putting the file into your iCloud Drive into the Scriptable folder
+  - either by pressing the plus icon in the Scriptable app and copy, paste the code
+  - or by putting the file into your iCloud drive into the Scriptable folder
 1. add widget to your homescreen
   - long press
   - plus icon
   - search “Scriptable”
   - all sizes work, but small and large look best
 1. click widget to reach the settings
-  - choose mooncat-scriptable-widget as Script
-  - it does not matter what to choose as interaction
+  - choose mooncat-scriptable-widget as script
+  - it probably doesn’t matter what to choose as interaction
   - add [config](#config) to parameter field
 
 ## Config
@@ -68,8 +75,8 @@ The following parameters can optionally be added to the config.
   - Values: 0x...
   - Example: `"filter": "wallets", "wallets": "0x..."`
   - Notes:
-      - filter parameter must include or equal "wallets" otherwise this parameter is ignored
-      - only acclimatized cats can be detected
+    - filter parameter must include or equal "wallets" otherwise this parameter is ignored
+    - only acclimatized cats can be detected
 
 
 
