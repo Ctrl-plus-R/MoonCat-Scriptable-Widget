@@ -46,11 +46,29 @@ The following parameters can optionally be added to the config.
 2. Filter
   - Key: filter
   - Type: string or array of strings
-  - Values: wallets, rescue, lunar, genesis
-  - Default: random rescued cat
+  - Values: wallets, specific or (see [cat types](#cat-types))
+  - Default: rescued
   - Example: `"filter": "lunar"`
-  - Note: If this parameter includes or equals "wallets", the config also needs a valid wallets parameter
-3. Wallets
+  - Notes:
+    - If this parameter includes or equals "wallets", the config also needs a "wallets" parameter
+    - If this parameter includes or equals "specific", the config also needs a "cat" or "cats" parameter
+3. Cat
+  - Key: cat
+  - Type: string
+  - Values: catId (0x0012345678) or rescueIndex (0–25439)
+  - Example: `"filter": "specific", "cat": "0x00d51b8121"`
+  - Notes:
+    - filter parameter must include or equal "specific" otherwise this parameter is ignored
+    - if there is also a "cats" parameter, "cats" is ignored
+4. Cats
+  - Key: cats
+  - Type: string or array of strings
+  - Values: catId (0x0012345678) or rescueIndex (0–25439)
+  - Example: `"filter": "specific", "cats": "[392, 0x00d8523a53]"`
+  - Notes:
+    - filter parameter must include or equal "specific" otherwise this parameter is ignored
+    - if there is also a "cat" parameter, "cats" is ignored
+5. Wallets
   - Key: wallets
   - Type: string or array of strings
   - Values: 0x...
@@ -60,7 +78,19 @@ The following parameters can optionally be added to the config.
     - only acclimatized cats can be detected
 
 - [ ] backgroundImage
-- [ ] cats
+
+### Cat Types
+This is the categorization of all cats as used in the [optional filter parameter](#optional-parameters) of the [configuration](#config).
+
+- rescued: minted, non-genesis (25440)
+- lunar: non-minted, non-genesis
+- genesis: minted, genesis
+- hero: non-minted, genesis
+
+- colored: rescued + lunar
+- colorless: genesis + hero
+- domesticated: rescued + genesis
+- wild: lunar + hero
 
 ### Example Configurations
 
@@ -84,4 +114,3 @@ A longer configuration could look likes this (with actual wallet ids):
 }
 ```
 This would randomly display a cat from one of the two wallets or a genesis cat.
-
