@@ -17,12 +17,12 @@ You can also set a background for the widget.
 1. add mooncat-scriptable-widget.js to Scriptable app
   - either by pressing the plus icon in the Scriptable app and copy, paste the code
   - or by putting the file into your iCloud drive into the Scriptable folder
-1. add widget to your homescreen
+2. add widget to your homescreen
   - long press
   - plus icon
   - search “Scriptable”
   - all sizes work, but small and large look best
-1. click widget to reach the settings
+3. click widget to reach the settings
   - choose mooncat-scriptable-widget as script
   - it probably doesn’t matter what to choose as interaction
   - add [config](#config) to parameter field
@@ -62,14 +62,14 @@ The following parameters can optionally be added to the config.
   - Values: black, white, blue, brown, cyan, darkGray, gray, green, lightGray, magenta, orange, purple, red, yellow
   - Default: inverted glow color of the displayed cat
   - Example: `"background": "black"`
-1. Filter
+2. Filter
   - Key: filter
   - Type: string or array of strings
   - Values: wallets, rescue, lunar, genesis
   - Default: random rescued cat
   - Example: `"filter": "black"`
   - Note: If this parameter includes or equals "wallets", the config also needs a valid wallets parameter
-1. Wallets
+3. Wallets
   - Key: wallets
   - Type: string or array of strings
   - Values: 0x...
