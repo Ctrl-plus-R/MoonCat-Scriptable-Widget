@@ -32,26 +32,7 @@ You must enter a configuration in the parameter field of your widget.
 The config is a json string and is therefore enclosed in curly brackets.
 It consists of your moralis API key and optional additional setting parameters.
 
-A minimum configuration looks like this (with your own API key):
-```json
-{
-  "moralisApiKey": "YOUR_API_KEY"
-}
-```
-This would show a random rescued cat in front of the cat’s inverted glow color on your widget.
-
-A longer configuration could look likes this (with actual wallet ids):
-```json
-{
-  "moralisApiKey": "YOUR_API_KEY",
-  "background": "black",
-  "filter": ["wallets", "genesis"],
-  "wallets": ["0x...", "0x..."]
-}
-```
-This would randomly display a cat from one of the two wallets or a genesis cat.
-
-Don’t forget the quotation marks around keys and string values.
+Don’t forget the quotation marks around keys and string values as shown in the [exxamples](#example-configurations).
 
 ### Optional Parameters
 The following parameters can optionally be added to the config.
@@ -78,5 +59,23 @@ The following parameters can optionally be added to the config.
     - filter parameter must include or equal "wallets" otherwise this parameter is ignored
     - only acclimatized cats can be detected
 
+### Example Configurations
+A minimum configuration looks like this (with your own API key):
+```json
+{
+  "moralisApiKey": "YOUR_API_KEY"
+}
+```
+This would show a random rescued cat in front of the cat’s inverted glow color on your widget.
 
+A longer configuration could look likes this (with actual wallet ids):
+```json
+{
+  "moralisApiKey": "YOUR_API_KEY",
+  "background": "black",
+  "filter": ["wallets", "genesis"],
+  "wallets": ["0x...", "0x..."]
+}
+```
+This would randomly display a cat from one of the two wallets or a genesis cat.
 
