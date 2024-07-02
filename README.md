@@ -48,7 +48,7 @@ The following parameters can optionally be added to the config.
   - Type: string or array of strings
   - Values: wallets, rescue, lunar, genesis
   - Default: random rescued cat
-  - Example: `"filter": "black"`
+  - Example: `"filter": "lunar"`
   - Note: If this parameter includes or equals "wallets", the config also needs a valid wallets parameter
 3. Wallets
   - Key: wallets
@@ -58,6 +58,9 @@ The following parameters can optionally be added to the config.
   - Notes:
     - filter parameter must include or equal "wallets" otherwise this parameter is ignored
     - only acclimatized cats can be detected
+
+[] backgroundImage
+[] cats
 
 ### Example Configurations
 
