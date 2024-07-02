@@ -11,10 +11,10 @@ an IOS widget programmed with Scriptable that shows a different random MoonCat b
   - either by pressing the plus icon in the Scriptable App and copy, paste the code
   - or by putting the file into your iCloud Drive into the Scriptable folder
 1. add widget to your homescreen
-   - long press
-   - plus icon
-   - search “Scriptable”
-   - all sizes work, but small and large look best
+  - long press
+  - plus icon
+  - search “Scriptable”
+  - all sizes work, but small and large look best
 1. click widget to reach the settings
   - choose mooncat-scriptable-widget as Script
   - it does not matter what to choose as interaction
