@@ -60,6 +60,8 @@ The following parameters can optionally be added to the config.
     - only acclimatized cats can be detected
 
 ### Example Configurations
+
+#### Minimum
 A minimum configuration looks like this (with your own API key):
 ```json
 {
@@ -68,6 +70,7 @@ A minimum configuration looks like this (with your own API key):
 ```
 This would show a random rescued cat in front of the cat’s inverted glow color on your widget.
 
+#### Mixed Filter
 A longer configuration could look likes this (with actual wallet ids):
 ```json
 {
