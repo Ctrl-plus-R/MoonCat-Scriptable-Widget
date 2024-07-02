@@ -37,13 +37,13 @@ Don’t forget the quotation marks around keys and string values as shown in the
 ### Optional Parameters
 The following parameters can optionally be added to the config.
 
-1. Background Color
+#### 1. Background Color
   - Key: background
   - Type: string
   - Values: black, white, blue, brown, cyan, darkGray, gray, green, lightGray, magenta, orange, purple, red, yellow
   - Default: inverted glow color of the displayed cat
   - Example: `"background": "black"`
-2. Filter
+#### 2. Filter
   - Key: filter
   - Type: string or array of strings
   - Values: wallets, specific or (see [cat types](#cat-types))
@@ -52,7 +52,7 @@ The following parameters can optionally be added to the config.
   - Notes:
     - If this parameter includes or equals "wallets", the config also needs a "wallets" parameter
     - If this parameter includes or equals "specific", the config also needs a "cat" or "cats" parameter
-3. Cat
+#### 3. Cat
   - Key: cat
   - Type: string
   - Values: catId (0x0012345678) or rescueIndex (0–25439)
@@ -60,7 +60,7 @@ The following parameters can optionally be added to the config.
   - Notes:
     - filter parameter must include or equal "specific" otherwise this parameter is ignored
     - if there is also a "cats" parameter, "cats" is ignored
-4. Cats
+#### 4. Cats
   - Key: cats
   - Type: string or array of strings
   - Values: catId (0x0012345678) or rescueIndex (0–25439)
@@ -68,7 +68,7 @@ The following parameters can optionally be added to the config.
   - Notes:
     - filter parameter must include or equal "specific" otherwise this parameter is ignored
     - if there is also a "cat" parameter, "cats" is ignored
-5. Wallets
+#### 5. Wallets
   - Key: wallets
   - Type: string or array of strings
   - Values: 0x...
