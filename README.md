@@ -96,7 +96,7 @@ The following parameters can optionally be added to the config.
 | Type    | string                                                                |
 | Values  | a valid link to a jpg or png                                          |
 | Example | `"backgroundImage": "https://mooncat.community/img/bgstarssmall.png"` |
-| Note    | image will be downloaded with every widget refresh because cashing has not been implemented yet |
+| Note    | image is downloaded each time the widget is updated, as cashing has not yet been implemented |
 
 ### Cat Types
 This is the categorization of all cats as used in the optional [filter parameter](#filter) of the [configuration](#config).
