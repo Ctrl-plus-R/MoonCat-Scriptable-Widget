@@ -74,15 +74,15 @@ The following parameters can optionally be added to the config.
   - filter parameter must include or equal "wallets" otherwise this parameter is ignored
   - only acclimatized cats can be detected
   
-#### 5. Background Color
 
-|         |                                          |
-| ------- | ---------------------------------------- |
-| Key     | `"background"`                           |
-| Type    | string                                   |
-| Values  | `"black"`, `"white"`, `"blue"`, `"brown"`, `"cyan"`, `"darkGray"`, `"gray"`, `"green"`, `"lightGray"`, `"magenta"`, `"orange"`, `"purple"`, `"red"`, `"yellow"` |
-| Default | inverted glow color of the displayed cat |
-| Example | `"background": "black"`                  |
+
+| #### 5. Background Color |                                          |
+| ------------------------ | ---------------------------------------- |
+| Key                      | `"background"`                           |
+| Type                     | string                                   |
+| Values                   | `"black"`, `"white"`, `"blue"`, `"brown"`, `"cyan"`, `"darkGray"`, `"gray"`, `"green"`, `"lightGray"`, `"magenta"`, `"orange"`, `"purple"`, `"red"`, `"yellow"` |
+| Default                  | inverted glow color of the displayed cat |
+| Example                  | `"background": "black"`                  |
 
 #### 6. Background Image
 - Key: `"backgroundImage"`
