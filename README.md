@@ -46,7 +46,7 @@ The following parameters can optionally be added to the config.
 | Values  | `"wallets"`, `"specific"` or (see [cat types](#cat-types)) |
 | Default | rescued                                                    |
 | Example | `"filter": "lunar"`                                        |
-| Notes   | - If this parameter includes or equals "wallets", the config also needs a "wallets" parameter <br> - If this parameter includes or equals "specific", the config also needs a "cat" or "cats" parameter |
+| Notes   | - `"filter": "wallets"` requires [`"wallets"` parameter](#wallets) <br> - `"filter": "specific"` requires [`"cat"`](#cat) or [`"cats"` parameter](#cats)  |
   
 #### 2. Cat
 
@@ -56,17 +56,17 @@ The following parameters can optionally be added to the config.
 | Type    | string (catId) or number (rescueIndex)                          |
 | Values  | catId (e. g. `"0x0012345678"`) or rescueIndex (e. g. `0–25439`) |
 | Example | `"filter": "specific", "cat": "0x00d51b8121"`                   |
-| Notes   | - filter parameter must include or equal "specific" otherwise this parameter is ignored <br> - if there is also a "cats" parameter, "cats" is ignored |
+| Notes   | - requires `"filter": "specific"` <br> - `"cat"`overrides `"cats"` |
   
 #### 3. Cats
 
 |         |                                                       |
 | ------- | ----------------------------------------------------- |
-| Key     | "`cats`"                                              |
+| Key     | `"cats"`                                              |
 | Type    | string (catId), number (rescueIndex) or array of both |
 | Values  | catId or rescueIndex                                  |
-| Example | `"filter": "specific", "cats": [392, "0x00d8523a53"]` |
-| Notes   | - filter parameter must include or equal "specific" otherwise this parameter is ignored <br> - if there also is a "cat" parameter, "cats" is ignored |
+| Example | `"cats": [392, "0x00d8523a53"]` |
+| Notes   | - requires `"filter": "specific"` <br> - `"cat"`overrides `"cats"` |
   
 #### 4. Wallets
 
@@ -75,8 +75,8 @@ The following parameters can optionally be added to the config.
 | Key     | `"wallets"`                               |
 | Type    | string or array of strings                |
 | Values  | walletId (e.g. `"0x..."`)                 |
-| Example | `"filter": "wallets", "wallets": "0x..."` |
-| Notes   | - filter parameter must include or equal "wallets" otherwise this parameter is ignored <br> - only acclimatized cats can be detected |
+| Example | `"wallets": "0x..."` |
+| Notes   | - requires `"filter": "wallets"` <br> - only finds acclimatized cats |
   
 #### 5. Background Color
 
@@ -96,7 +96,7 @@ The following parameters can optionally be added to the config.
 | Type    | string                                                                |
 | Values  | a valid link to a jpg or png                                          |
 | Example | `"backgroundImage": "https://mooncat.community/img/bgstarssmall.png"` |
-| Note    | be aware that the image will be downloaded with every refresh because no use of local storage has yet been implemented |
+| Note    | image will be downloaded with every widget refresh because cashing has not been implemented yet |
 
 ### Cat Types
 This is the categorization of all cats as used in the optional [filter parameter](#filter) of the [configuration](#config).
