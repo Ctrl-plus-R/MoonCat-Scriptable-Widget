@@ -15,17 +15,17 @@ You can also set a background for the widget.
 
 ## Setup
 1. add mooncat-scriptable-widget.js to Scriptable app
-  - → either press the plus icon in the Scriptable app and copy+paste the code
-  - → or put the file into the Scriptable folder in your iCloud drive
-2. add widget to your homescreen
-  - → long press
-  - → plus icon
-  - → search “Scriptable”
-  - → all sizes work, but small and large look best
+   → either press the plus icon in the Scriptable app and copy+paste the code
+   → or put the file into the Scriptable folder in your iCloud drive
+3. add widget to your homescreen
+   → long press
+   → plus icon
+   → search “Scriptable”
+   → all sizes work, but small and large look best
 3. click widget to reach the settings
-  - → choose mooncat-scriptable-widget as script
-  - → it probably doesn’t matter what to choose as interaction
-  - → add [config](#config) to parameter field
+   → choose mooncat-scriptable-widget as script
+   → it probably doesn’t matter what to choose as interaction
+   → add [config](#config) to parameter field
 
 ## Config
 You must enter a configuration in the parameter field of your widget.
