@@ -75,11 +75,14 @@ The following parameters can optionally be added to the config.
   - only acclimatized cats can be detected
   
 #### 5. Background Color
-- Key: `"background"`
-- Type: string
-- Values: `"black"`, `"white"`, `"blue"`, `"brown"`, `"cyan"`, `"darkGray"`, `"gray"`, `"green"`, `"lightGray"`, `"magenta"`, `"orange"`, `"purple"`, `"red"`, `"yellow"`
-- Default: inverted glow color of the displayed cat
-- Example: `"background": "black"`
+
+|         |                                          |
+| ------- | ---------------------------------------- |
+| Key     | `"background"`                           |
+| Type    | string                                   |
+| Values  | `"black"`, `"white"`, `"blue"`, `"brown"`, `"cyan"`, `"darkGray"`, `"gray"`, `"green"`, `"lightGray"`, `"magenta"`, `"orange"`, `"purple"`, `"red"`, `"yellow"` |
+| Default | inverted glow color of the displayed cat |
+| Example | `"background": "black"`                  |
 
 #### 6. Background Image
 - Key: `"backgroundImage"`
@@ -89,7 +92,7 @@ The following parameters can optionally be added to the config.
 - Note: be aware that the image will be downloaded with every refresh because no use of local storage has yet been implemented
 
 ### Cat Types
-This is the categorization of all cats as used in the [optional filter parameter](#optional-parameters) of the [configuration](#config).
+This is the categorization of all cats as used in the optional [filter parameter](#filter) of the [configuration](#config).
 
 | Type             | Description             |
 | ---------------- | ----------------------- |
