@@ -55,7 +55,7 @@ The following parameters can optionally be added to the config.
 | Key     | `"cat"`                                                         |
 | Type    | string (catId) or number (rescueIndex)                          |
 | Values  | catId (e. g. `"0x0012345678"`) or rescueIndex (e. g. `0–25439`) |
-| Example | `"filter": "specific", "cat": "0x00d51b8121"`                   |
+| Example | `"cat": "0x00d51b8121"`                   |
 | Notes   | - requires `"filter": "specific"` <br> - `"cat"`overrides `"cats"` |
   
 #### 3. Cats
