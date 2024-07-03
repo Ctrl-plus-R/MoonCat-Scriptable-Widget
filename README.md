@@ -74,9 +74,9 @@ The following parameters can optionally be added to the config.
   - filter parameter must include or equal "wallets" otherwise this parameter is ignored
   - only acclimatized cats can be detected
   
+#### 5. Background Color
 
-
-| #### 5. Background Color |                                          |
+|  |                                          |
 | ------------------------ | ---------------------------------------- |
 | Key                      | `"background"`                           |
 | Type                     | string                                   |
