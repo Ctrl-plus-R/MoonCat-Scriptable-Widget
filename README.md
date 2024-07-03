@@ -15,8 +15,8 @@ You can also set a background for the widget.
 
 ## Setup
 1. add mooncat-scriptable-widget.js to Scriptable app
-   → either press the plus icon in the Scriptable app and copy+paste the code
-   → or put the file into the Scriptable folder in your iCloud drive
+   - → either press the plus icon in the Scriptable app and copy+paste the code
+   - → or put the file into the Scriptable folder in your iCloud drive
 3. add widget to your homescreen
    → long press
    → plus icon
