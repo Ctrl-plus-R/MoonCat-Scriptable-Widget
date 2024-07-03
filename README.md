@@ -38,9 +38,9 @@ Don’t forget the quotation marks around keys and string values as shown in the
 The following parameters can optionally be added to the config.
 
 #### 1. Filter
-- Key: filter
+- Key: `"filter"`
 - Type: string or array of strings
-- Values: wallets, specific or (see [cat types](#cat-types))
+- Values: `"wallets"`, `"specific"` or (see [cat types](#cat-types))
 - Default: rescued
 - Example: `"filter": "lunar"`
 - Notes:
@@ -48,41 +48,41 @@ The following parameters can optionally be added to the config.
   - If this parameter includes or equals "specific", the config also needs a "cat" or "cats" parameter
   
 #### 2. Cat
-- Key: cat
+- Key: `"cat"`
 - Type: string (catId) or number (rescueIndex)
-- Values: catId (0x0012345678) or rescueIndex (0–25439)
+- Values: catId (e. g. `"0x0012345678"`) or rescueIndex (e. g. `0–25439`)
 - Example: `"filter": "specific", "cat": "0x00d51b8121"`
 - Notes:
   - filter parameter must include or equal "specific" otherwise this parameter is ignored
   - if there is also a "cats" parameter, "cats" is ignored
   
 #### 3. Cats
-- Key: cats
-- Type: string or array of strings
-- Values: catId (0x0012345678) or rescueIndex (0–25439)
+- Key: "`cats`"
+- Type: string (catId), number (rescueIndex) or array of both
+- Values: catId or rescueIndex
 - Example: `"filter": "specific", "cats": [392, "0x00d8523a53"]`
 - Notes:
   - filter parameter must include or equal "specific" otherwise this parameter is ignored
-  - if there is also a "cat" parameter, "cats" is ignored
+  - if there also is a "cat" parameter, "cats" is ignored
   
 #### 4. Wallets
-- Key: wallets
+- Key: `"wallets"`
 - Type: string or array of strings
-- Values: 0x...
+- Values: walletId (e.g. `"0x..."`)
 - Example: `"filter": "wallets", "wallets": "0x..."`
 - Notes:
   - filter parameter must include or equal "wallets" otherwise this parameter is ignored
   - only acclimatized cats can be detected
   
 #### 5. Background Color
-- Key: background
+- Key: `"background"`
 - Type: string
-- Values: black, white, blue, brown, cyan, darkGray, gray, green, lightGray, magenta, orange, purple, red, yellow
+- Values: `"black"`, `"white"`, `"blue"`, `"brown"`, `"cyan"`, `"darkGray"`, `"gray"`, `"green"`, `"lightGray"`, `"magenta"`, `"orange"`, `"purple"`, `"red"`, `"yellow"`
 - Default: inverted glow color of the displayed cat
 - Example: `"background": "black"`
 
 #### 6. Background Image
-- Key. backgroundImage
+- Key: `"backgroundImage"`
 - Type: string
 - Values: a valid link to a jpg or png
 - Example: `"backgroundImage": "https://mooncat.community/img/bgstarssmall.png"`
@@ -91,15 +91,16 @@ The following parameters can optionally be added to the config.
 ### Cat Types
 This is the categorization of all cats as used in the [optional filter parameter](#optional-parameters) of the [configuration](#config).
 
-- rescued: minted, non-genesis (25440)
-- lunar: non-minted, non-genesis
-- genesis: minted, genesis
-- hero: non-minted, genesis
-
-- colored: rescued + lunar
-- colorless: genesis + hero
-- domesticated: rescued + genesis
-- wild: lunar + hero
+| Type             | Description             |
+| ---------------- | ----------------------- |
+| `"rescued"`      | minted, non-genesis     |
+| `"lunar"`        | non-minted, non-genesis |
+| `"genesis"`      | minted, genesis         |
+| `"hero"`         | non-minted, genesis     |
+| `"colored"`      | rescued + lunar         |
+| `"colorless"`    | genesis + hero          |
+| `"domesticated"` | rescued + genesis       |
+| `"wild"`         | lunar + hero            |
 
 ### Example Configurations
 
