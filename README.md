@@ -73,9 +73,7 @@ The following parameters can optionally be added to the config.
 | Type    | string or array of strings                |
 | Values  | walletId (e.g. `"0x..."`)                 |
 | Example | `"filter": "wallets", "wallets": "0x..."` |
-| Notes   | 
-- filter parameter must include or equal "wallets" otherwise this parameter is ignored
-- only acclimatized cats can be detected |
+| Notes   | - filter parameter must include or equal "wallets" otherwise this parameter is ignored <br> - only acclimatized cats can be detected |
   
 #### 5. Background Color
 
