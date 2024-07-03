@@ -46,7 +46,7 @@ The following parameters can optionally be added to the config.
 | Values  | `"wallets"`, `"specific"` or (see [cat types](#cat-types)) |
 | Default | rescued                                                    |
 | Example | `"filter": "lunar"`                                        |
-| Notes   | - `"filter": "wallets"` requires [`"wallets"` parameter](#wallets) <br> - `"filter": "specific"` requires [`"cat"`](#cat) or [`"cats"` parameter](#cats)  |
+| Notes   | - `"filter": "wallets"` requires another parameter [`"wallets"`](#wallets) <br> - `"filter": "specific"` requires another parameter [`"cat"`](#cat) or [`"cats"`](#cats)  |
   
 #### 2. Cat
 
