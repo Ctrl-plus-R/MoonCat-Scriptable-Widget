@@ -66,13 +66,16 @@ The following parameters can optionally be added to the config.
   - if there also is a "cat" parameter, "cats" is ignored
   
 #### 4. Wallets
-- Key: `"wallets"`
-- Type: string or array of strings
-- Values: walletId (e.g. `"0x..."`)
-- Example: `"filter": "wallets", "wallets": "0x..."`
-- Notes:
-  - filter parameter must include or equal "wallets" otherwise this parameter is ignored
-  - only acclimatized cats can be detected
+
+|         |                                           |
+| ------- | ----------------------------------------- | 
+| Key     | `"wallets"`                               |
+| Type    | string or array of strings                |
+| Values  | walletId (e.g. `"0x..."`)                 |
+| Example | `"filter": "wallets", "wallets": "0x..."` |
+| Notes   | 
+- filter parameter must include or equal "wallets" otherwise this parameter is ignored
+- only acclimatized cats can be detected |
   
 #### 5. Background Color
 
