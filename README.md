@@ -39,7 +39,7 @@ The following parameters can optionally be added to the config.
 
 <a name="config-filter"></a>
 |         | Filter                                                     |
-| ------- | ---------------------------------------------------------- |
+| ------- | :--------------------------------------------------------- |
 | Key     | `"filter"`                                                 |
 | Type    | string                                                     |
 | Values  | `"wallets"`, `"cats"` or (see [cat types](#cat-types))     |
@@ -49,7 +49,7 @@ The following parameters can optionally be added to the config.
 
 <a name="config-cats"></a>
 |         | Cats                                                  |
-| ------- | ----------------------------------------------------- |
+| ------- | :---------------------------------------------------- |
 | Key     | `"cats"`                                              |
 | Type    | string (catId), number (rescueIndex) or array of both |
 | Values  | catId or rescueIndex                                  |
@@ -58,7 +58,7 @@ The following parameters can optionally be added to the config.
   
 <a name="config-wallets"></a>
 |         | Wallets                                                                                |
-| ------- | -------------------------------------------------------------------------------------- |
+| ------- | :------------------------------------------------------------------------------------- |
 | Key     | `"wallets"`                                                                            |
 | Type    | string or array of strings                                                             |
 | Values  | walletId (e.g. `"0x..."`)                                                              |
@@ -67,7 +67,7 @@ The following parameters can optionally be added to the config.
   
 <a name="config-background-color"></a>
 |         | Background Color                         |
-| ------- | ---------------------------------------- |
+| ------- | :--------------------------------------- |
 | Key     | `"background"`                           |
 | Type    | string                                   |
 | Values  | `"black"`, `"white"`, `"blue"`, `"brown"`, `"cyan"`, `"darkGray"`, `"gray"`, `"green"`, `"lightGray"`, `"magenta"`, `"orange"`, `"purple"`, `"red"`, `"yellow"` |
@@ -77,7 +77,7 @@ The following parameters can optionally be added to the config.
 
 <a name="config-background-image"></a>
 |         | Background Image                                                                             |
-| ------- | -------------------------------------------------------------------------------------------- |
+| ------- | :------------------------------------------------------------------------------------------- |
 | Key     | `"backgroundImage"`                                                                          |
 | Type    | string                                                                                       |
 | Values  | a valid link to a jpg or png                                                                 |
@@ -88,7 +88,7 @@ The following parameters can optionally be added to the config.
 This is the categorization of all cats as used in the config parameter [filter](#config-filter).
 
 | Type             | Description             |
-| ---------------- | ----------------------- |
+| :--------------- | :---------------------- |
 | `"rescued"`      | minted, non-genesis     |
 | `"lunar"`        | non-minted, non-genesis |
 | `"genesis"`      | minted, genesis         |
