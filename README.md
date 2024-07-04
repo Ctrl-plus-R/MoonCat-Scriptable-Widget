@@ -71,13 +71,13 @@ The config can consist of the following parameters:
 | Notes   | - requires [`"filter": "wallets"`](#config-filter) <br> - only finds acclimated cats |
   
 <a name="config-background-color"></a>
-|         | Background Color                         |
-| ------- | :--------------------------------------- |
-| Key     | `"background"`                           |
-| Type    | string                                   |
-| Values  | `"black"`, `"white"`, `"blue"`, `"brown"`, `"cyan"`, `"darkGray"`, `"gray"`, `"green"`, `"lightGray"`, `"magenta"`, `"orange"`, `"purple"`, `"red"`, `"yellow"` |
-| Default | inverted glow color of the displayed cat |
-| Example | `"background": "black"`                  |
+|          | Background Color                                   |
+| -------- | :------------------------------------------------- |
+| Key      | `"background"`                                     |
+| Type     | string                                             |
+| Values   | `"black"`, `"white"`, `"blue"`, `"brown"`, `"cyan"`, `"darkGray"`, `"gray"`, `"green"`, `"lightGray"`, `"magenta"`, `"orange"`, `"purple"`, `"red"`, `"yellow"`, [hex string (3- or 6-digit)](https://www.color-hex.com/) |
+| Default  | inverted glow color of the displayed cat           |
+| Examples | `"background": "black"`, `"background": "#dfbcbb"` |
 
 
 <a name="config-background-image"></a>
