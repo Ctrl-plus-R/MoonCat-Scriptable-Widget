@@ -41,38 +41,29 @@ The following parameters can optionally be added to the config.
 |         | Filter                                                     |
 | ------- | ---------------------------------------------------------- |
 | Key     | `"filter"`                                                 |
-| Type    | string or array of strings                                 |
-| Values  | `"wallets"`, `"specific"` or (see [cat types](#cat-types)) |
+| Type    | string                                                     |
+| Values  | `"wallets"`, `"cats"` or (see [cat types](#cat-types))     |
 | Default | rescued                                                    |
 | Example | `"filter": "lunar"`                                        |
-| Notes   | - `"filter": "wallets"` requires another parameter [`"wallets"`](#config-wallets) <br> - `"filter": "specific"` requires another parameter [`"cat"`](#config-cat) or [`"cats"`](#config-cats)  |
-  
-<a name="config-cat"></a>
-|         | Cat                                                                |
-| ------- | ------------------------------------------------------------------ |
-| Key     | `"cat"`                                                            |
-| Type    | string (catId) or number (rescueIndex)                             |
-| Values  | catId (e. g. `"0x0012345678"`) or rescueIndex (e. g. `0–25439`)    |
-| Example | `"cat": "0x00d51b8121"`                                            |
-| Notes   | - requires [`"filter": "specific"`](#config-filter) <br> - `"cat"` overrides [`"cats"`](#config-cats) |
-  
+| Notes   | - `"wallets"` requires another parameter [`"wallets"`](#config-wallets) <br> - `"cats"` requires another parameter [`"cats"`](#config-cats) |
+
 <a name="config-cats"></a>
-|         | Cats                                                                                                 |
-| ------- | ---------------------------------------------------------------------------------------------------- |
-| Key     | `"cats"`                                                                                             |
-| Type    | string (catId), number (rescueIndex) or array of both                                                |
-| Values  | catId or rescueIndex                                                                                 |
-| Example | `"cats": [392, "0x00d8523a53"]`                                                                      |
-| Notes   | - requires [`"filter": "specific"`](#config-filter) <br> - [`"cat"`](#config-cat) overrides `"cats"` |
+|         | Cats                                                  |
+| ------- | ----------------------------------------------------- |
+| Key     | `"cats"`                                              |
+| Type    | string (catId), number (rescueIndex) or array of both |
+| Values  | catId or rescueIndex                                  |
+| Example | `"cats": [392, "0x00d8523a53"]`                       |
+| Note    | requires [`"filter": "specific"`](#config-filter)     |
   
 <a name="config-wallets"></a>
-|         | Wallets                                                              |
-| ------- | -------------------------------------------------------------------- | 
-| Key     | `"wallets"`                                                          |
-| Type    | string or array of strings                                           |
-| Values  | walletId (e.g. `"0x..."`)                                            |
-| Example | `"wallets": "0x..."`                                                 |
-| Notes   | - requires `"filter": "wallets"` <br> - only finds acclimatized cats |
+|         | Wallets                                                                                |
+| ------- | -------------------------------------------------------------------------------------- |
+| Key     | `"wallets"`                                                                            |
+| Type    | string or array of strings                                                             |
+| Values  | walletId (e.g. `"0x..."`)                                                              |
+| Example | `"wallets": "0x..."`                                                                   |
+| Notes   | - requires [`"filter": "wallets"`](#config-filter) <br> - only finds acclimatized cats |
   
 <a name="config-background-color"></a>
 |         | Background Color                         |
@@ -116,21 +107,21 @@ A minimum configuration looks like this (with your own API key):
   "moralisApiKey": "YOUR_API_KEY"
 }
 ```
-This would show a random rescued cat in front of the cat’s inverted glow color on your widget.
+This would show a random rescued cat in front of the cat’s inverted glow color.
 
-#### Mixed Filter
+#### Cats from multiple wallets
 A longer configuration could look likes this (with actual wallet ids):
 ```json
 {
   "moralisApiKey": "YOUR_API_KEY",
   "background": "black",
-  "filter": ["wallets", "genesis"],
+  "filter": "wallets",
   "wallets": ["0x...", "0x..."]
 }
 ```
-This would randomly display a cat from one of the two wallets or a genesis cat.
+This would display a random cat from one of the two wallets against a black background, each cat with the same probability.
 
-#### Specific Cat
+#### Specific cat
 ```json
 {
   "moralisApiKey": "YOUR_API_KEY",
@@ -138,4 +129,4 @@ This would randomly display a cat from one of the two wallets or a genesis cat.
   "cat": 392
 }
 ```
-This will always show the same magnificent cat.
+This would always show the same magnificent cat in front of its inverted glow color.
