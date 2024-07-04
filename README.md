@@ -106,10 +106,10 @@ This is the categorization of all cats as used in the config parameter [filter](
 
 ### Example Configurations
 
-**1. No configuration**
+#### 1. No configuration
 A widget without configuration shows a random domesticated cat (rescued or genesis) in front of its inverted glow color.
 
-**2. Specific cat**
+#### 2. Specific cat
 ```json
 {
   "filter": "cats",
@@ -119,7 +119,7 @@ A widget without configuration shows a random domesticated cat (rescued or genes
 This would always show the same magnificent cat in front of its inverted glow color.
 Note that the parameter is called `"cats"`with “s” event if the value is only a single cat instead of an array.
 
-**3. Cats from multiple wallets**
+#### 3. Cats from multiple wallets
 A longer configuration could look likes this (with your own Moralis API key and valid wallet IDs):
 ```json
 {
