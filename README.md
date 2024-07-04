@@ -11,7 +11,7 @@ You can also set a background for the widget.
 ## Requirements
 - device with iOS
 - installed [Scriptable app](https://scriptable.app/)
-- [Moralis](https://moralis.io/) account with API key
+- for advanced features: [Moralis](https://moralis.io/) account with API key
 
 ## Setup
 1. add mooncat-scriptable-widget.js to Scriptable app
@@ -25,27 +25,33 @@ You can also set a background for the widget.
 3. click widget to reach the settings
    - choose mooncat-scriptable-widget as script
    - it probably doesn’t matter what to choose as interaction
-   - add [config](#config) to parameter field
+   - add [config](#config) to parameter field to customize your widget
 
 ## Config
-You must enter a configuration in the parameter field of your widget.
+To customize your widgets you need to enter a configuration in the parameter field of your widget settings.
 The config is a json string and therefore enclosed in curly brackets.
 It consists of your Moralis API key and optional additional settings.
 
 Don’t forget the quotation marks around keys and string values as shown in the [examples](#example-configurations).
 
-### Optional Parameters
-The following parameters can optionally be added to the config.
+
+<a name="config-moralis-api-key"></a>
+|         | Moralis API Key                                                          |
+| ------- | :----------------------------------------------------------------------- |
+| Key     | `"moralisApiKey"`                                                        |
+| Type    | string                                                                   |
+| Example | `"moralisApiKey": "YOUR_MORALIS_API_KEY"`                                |
+| Notes   | - the API key is needed to use the [`"wallets"` filter](#config-wallets) |
 
 <a name="config-filter"></a>
 |         | Filter                                                     |
 | ------- | :--------------------------------------------------------- |
 | Key     | `"filter"`                                                 |
 | Type    | string                                                     |
-| Values  | `"wallets"`, `"cats"` or (see [cat types](#cat-types))     |
+| Values  | `"cats"`, `"wallets"` or (see [cat types](#cat-types))     |
 | Default | rescued                                                    |
 | Example | `"filter": "lunar"`                                        |
-| Notes   | - `"wallets"` requires another parameter [`"wallets"`](#config-wallets) <br> - `"cats"` requires another parameter [`"cats"`](#config-cats) |
+| Notes   | - `"cats"` requires another parameter [`"cats"`](#config-cats) <br> - `"wallets"` requires two other parameters [`"moralisApiKey"`](#config-moralis-api-key) and [`"wallets"`](#config-wallets) |
 
 <a name="config-cats"></a>
 |         | Cats                                                  |
@@ -54,7 +60,7 @@ The following parameters can optionally be added to the config.
 | Type    | string (catId), number (rescueIndex) or array of both |
 | Values  | catId or rescueIndex                                  |
 | Example | `"cats": [392, "0x00d8523a53"]`                       |
-| Note    | requires [`"filter": "specific"`](#config-filter)     |
+| Note    | requires [`"filter": "cats"`](#config-filter)     |
   
 <a name="config-wallets"></a>
 |         | Wallets                                                                                |
@@ -100,17 +106,21 @@ This is the categorization of all cats as used in the config parameter [filter](
 
 ### Example Configurations
 
-#### Minimum
-A minimum configuration looks like this (with your own API key):
+**1. No configuration**
+A widget without configuration shows a random domesticated cat (rescued or genesis) in front of its inverted glow color.
+
+**2. Specific cat**
 ```json
 {
-  "moralisApiKey": "YOUR_API_KEY"
+  "filter": "cats",
+  "cats": 392
 }
 ```
-This would show a random rescued cat in front of the cat’s inverted glow color.
+This would always show the same magnificent cat in front of its inverted glow color.
+Note that the parameter is called `"cats"`with “s” event if the value is only a single cat instead of an array.
 
-#### Cats from multiple wallets
-A longer configuration could look likes this (with actual wallet ids):
+**3. Cats from multiple wallets**
+A longer configuration could look likes this (with your own Moralis API key and valid wallet IDs):
 ```json
 {
   "moralisApiKey": "YOUR_API_KEY",
@@ -120,13 +130,3 @@ A longer configuration could look likes this (with actual wallet ids):
 }
 ```
 This would display a random cat from one of the two wallets against a black background, each cat with the same probability.
-
-#### Specific cat
-```json
-{
-  "moralisApiKey": "YOUR_API_KEY",
-  "filter": "specific",
-  "cat": 392
-}
-```
-This would always show the same magnificent cat in front of its inverted glow color.
