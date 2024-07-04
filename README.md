@@ -25,7 +25,7 @@ You can also set a background for the widget.
 3. click widget to reach the settings
    - choose mooncat-scriptable-widget as script
    - it probably doesn’t matter what to choose as interaction
-   - add [config](#config) to parameter field to customize your widget
+   - if you want to customize your widget, add [config](#config) to parameter field
 
 ## CONFIG
 To customize your widgets you need to enter a configuration in the parameter field of your widget settings.
