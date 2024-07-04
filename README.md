@@ -37,7 +37,7 @@ Don’t forget the quotation marks around keys and string values as shown in the
 ### Optional Parameters
 The following parameters can optionally be added to the config.
 
-<a name="config--filter"></a>
+<a name="config-filter"></a>
 |         | Filter                                                     |
 | ------- | ---------------------------------------------------------- |
 | Key     | `"filter"`                                                 |
@@ -47,7 +47,7 @@ The following parameters can optionally be added to the config.
 | Example | `"filter": "lunar"`                                        |
 | Notes   | - `"filter": "wallets"` requires another parameter [`"wallets"`](#config-wallets) <br> - `"filter": "specific"` requires another parameter [`"cat"`](#config-cat) or [`"cats"`](#config-cats)  |
   
-<a name="config--cat"></a>
+<a name="config-cat"></a>
 |         | Cat                                                                |
 | ------- | ------------------------------------------------------------------ |
 | Key     | `"cat"`                                                            |
@@ -56,7 +56,7 @@ The following parameters can optionally be added to the config.
 | Example | `"cat": "0x00d51b8121"`                                            |
 | Notes   | - requires [`"filter": "specific"`](#config-filter) <br> - `"cat"` overrides [`"cats"`](#config-cats) |
   
-<a name="config--cats"></a>
+<a name="config-cats"></a>
 |         | Cats                                                                                                 |
 | ------- | ---------------------------------------------------------------------------------------------------- |
 | Key     | `"cats"`                                                                                             |
@@ -65,7 +65,7 @@ The following parameters can optionally be added to the config.
 | Example | `"cats": [392, "0x00d8523a53"]`                                                                      |
 | Notes   | - requires [`"filter": "specific"`](#config-filter) <br> - [`"cat"`](#config-cat) overrides `"cats"` |
   
-<a name="config--wallets"></a>
+<a name="config-wallets"></a>
 |         | Wallets                                                              |
 | ------- | -------------------------------------------------------------------- | 
 | Key     | `"wallets"`                                                          |
@@ -74,7 +74,7 @@ The following parameters can optionally be added to the config.
 | Example | `"wallets": "0x..."`                                                 |
 | Notes   | - requires `"filter": "wallets"` <br> - only finds acclimatized cats |
   
-<a name="config--background-color"></a>
+<a name="config-background-color"></a>
 |         | Background Color                         |
 | ------- | ---------------------------------------- |
 | Key     | `"background"`                           |
@@ -84,7 +84,7 @@ The following parameters can optionally be added to the config.
 | Example | `"background": "black"`                  |
 
 
-<a name="config--background-image"></a>
+<a name="config-background-image"></a>
 |         | Background Image                                                                             |
 | ------- | -------------------------------------------------------------------------------------------- |
 | Key     | `"backgroundImage"`                                                                          |
