@@ -102,6 +102,7 @@ This is the categorization of all cats as used in the config parameter [filter](
 | `"colorless"`    | genesis + hero          |
 | `"domesticated"` | rescued + genesis       |
 | `"wild"`         | lunar + hero            |
+| `"all"`          | all cats                |
 
 ### Example Configurations
 
