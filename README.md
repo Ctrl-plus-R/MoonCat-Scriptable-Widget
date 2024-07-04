@@ -117,7 +117,7 @@ A widget without configuration shows a random domesticated cat (rescued or genes
 }
 ```
 This would always show the same magnificent cat in front of its inverted glow color.
-Note that the parameter is called `"cats"`with “s” event if the value is only a single cat instead of an array.
+Note that the parameter is called `"cats"` with “s” even if the value is only a single cat.
 
 #### 3. Cats from multiple wallets
 To access wallets you need a Moralis API key.
@@ -130,4 +130,4 @@ To access wallets you need a Moralis API key.
 }
 ```
 This would display a random cat from one of the two wallets against a black background, each cat with the same probability.
-Instead of an array of wallet ids, you can also enter just a single one as a value.
+Instead of an array of wallet ids, you can also enter just a single value.
