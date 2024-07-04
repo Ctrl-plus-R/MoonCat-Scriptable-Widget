@@ -1,19 +1,19 @@
 # MoonCat-Scriptable-Widget
 IOS widget programmed with [Scriptable](https://scriptable.app/) that shows a different random MoonCat based on user-defined filters in each widget refresh loop
 
-## General
+## GENERAL
 You can have several widgets at once with different settings.
 Each widget can show a specific cat, switch between a selection or even change randomly.
 Wallets can also be specified to define the selection of cats. 
 iOS takes care of updating the widgets independently.
 You can also set a background for the widget.
 
-## Requirements
+## REQUIREMENTS
 - device with iOS
 - installed [Scriptable app](https://scriptable.app/)
 - for advanced features: [Moralis](https://moralis.io/) account with API key
 
-## Setup
+## SETUP
 1. add mooncat-scriptable-widget.js to Scriptable app
    - either press the plus icon in the Scriptable app and copy+paste the code
    - or put the file into the Scriptable folder in your iCloud drive
@@ -27,7 +27,7 @@ You can also set a background for the widget.
    - it probably doesn’t matter what to choose as interaction
    - add [config](#config) to parameter field to customize your widget
 
-## Config
+## CONFIG
 To customize your widgets you need to enter a configuration in the parameter field of your widget settings.
 The config is a json string and therefore enclosed in curly brackets.
 Also don’t forget the quotation marks around keys and string values as shown in the [examples](#example-configurations).
