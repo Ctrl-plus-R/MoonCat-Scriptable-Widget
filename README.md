@@ -75,7 +75,7 @@ The config can consist of the following parameters:
 | -------- | :------------------------------------------------- |
 | Key      | `"background"`                                     |
 | Type     | string                                             |
-| Values   | `"black"`, `"white"`, `"blue"`, `"brown"`, `"cyan"`, `"darkGray"`, `"gray"`, `"green"`, `"lightGray"`, `"magenta"`, `"orange"`, `"purple"`, `"red"`, `"yellow"`, [hex string (3- or 6-digit)](https://www.color-hex.com/) |
+| Values   | `"black"`, `"white"`, `"blue"`, `"brown"`, `"cyan"`, `"darkGray"`, `"gray"`, `"green"`, `"lightGray"`, `"magenta"`, `"orange"`, `"purple"`, `"red"`, `"yellow"`, [hex string](https://www.color-hex.com/) (3- or 6-digit) |
 | Default  | inverted glow color of the displayed cat           |
 | Examples | `"background": "black"`, `"background": "#dfbcbb"` |
 
