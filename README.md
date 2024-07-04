@@ -120,7 +120,7 @@ This would always show the same magnificent cat in front of its inverted glow co
 Note that the parameter is called `"cats"`with “s” event if the value is only a single cat instead of an array.
 
 #### 3. Cats from multiple wallets
-A longer configuration could look likes this (with your own Moralis API key and valid wallet IDs):
+To access wallets you need a Moralis API key.
 ```json
 {
   "moralisApiKey": "YOUR_API_KEY",
@@ -130,3 +130,4 @@ A longer configuration could look likes this (with your own Moralis API key and 
 }
 ```
 This would display a random cat from one of the two wallets against a black background, each cat with the same probability.
+Instead of an array of wallet ids, you can also enter just a single one as a value.
