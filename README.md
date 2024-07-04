@@ -63,7 +63,7 @@ The following parameters can optionally be added to the config.
 | Type    | string or array of strings                                                             |
 | Values  | walletId (e.g. `"0x..."`)                                                              |
 | Example | `"wallets": "0x..."`                                                                   |
-| Notes   | - requires [`"filter": "wallets"`](#config-filter) <br> - only finds acclimatized cats |
+| Notes   | - requires [`"filter": "wallets"`](#config-filter) <br> - only finds acclimated cats |
   
 <a name="config-background-color"></a>
 |         | Background Color                         |
