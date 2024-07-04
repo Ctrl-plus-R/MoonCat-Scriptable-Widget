@@ -61,7 +61,7 @@ The following parameters can optionally be added to the config.
 | ------- | :------------------------------------------------------------------------------------- |
 | Key     | `"wallets"`                                                                            |
 | Type    | string or array of strings                                                             |
-| Values  | walletId (e.g. `"0x..."`)                                                              |
+| Values  | walletId (40-digit hex string, e.g. `"0x..."`)                                                            |
 | Example | `"wallets": "0x..."`                                                                   |
 | Notes   | - requires [`"filter": "wallets"`](#config-filter) <br> - only finds acclimated cats |
   
