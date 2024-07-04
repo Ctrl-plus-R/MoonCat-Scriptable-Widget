@@ -30,18 +30,9 @@ You can also set a background for the widget.
 ## Config
 To customize your widgets you need to enter a configuration in the parameter field of your widget settings.
 The config is a json string and therefore enclosed in curly brackets.
-It consists of your Moralis API key and optional additional settings.
+Also don’t forget the quotation marks around keys and string values as shown in the [examples](#example-configurations).
 
-Don’t forget the quotation marks around keys and string values as shown in the [examples](#example-configurations).
-
-
-<a name="config-moralis-api-key"></a>
-|         | Moralis API Key                                                          |
-| ------- | :----------------------------------------------------------------------- |
-| Key     | `"moralisApiKey"`                                                        |
-| Type    | string                                                                   |
-| Example | `"moralisApiKey": "YOUR_MORALIS_API_KEY"`                                |
-| Notes   | - the API key is needed to use the [`"wallets"` filter](#config-wallets) |
+The config can consist of the following parameters:
 
 <a name="config-filter"></a>
 |         | Filter                                                     |
@@ -52,6 +43,14 @@ Don’t forget the quotation marks around keys and string values as shown in the
 | Default | rescued                                                    |
 | Example | `"filter": "lunar"`                                        |
 | Notes   | - `"cats"` requires another parameter [`"cats"`](#config-cats) <br> - `"wallets"` requires two other parameters [`"moralisApiKey"`](#config-moralis-api-key) and [`"wallets"`](#config-wallets) |
+
+<a name="config-moralis-api-key"></a>
+|         | Moralis API Key                                                       |
+| ------- | :-------------------------------------------------------------------- |
+| Key     | `"moralisApiKey"`                                                     |
+| Type    | string                                                                |
+| Example | `"moralisApiKey": "YOUR_MORALIS_API_KEY"`                             |
+| Note    | only needed in order to use the [`"wallets"` filter](#config-wallets) |
 
 <a name="config-cats"></a>
 |         | Cats                                                  |
