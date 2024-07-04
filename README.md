@@ -37,50 +37,45 @@ Don’t forget the quotation marks around keys and string values as shown in the
 ### Optional Parameters
 The following parameters can optionally be added to the config.
 
-#### 1. Filter
-
-|         |                                                            |
+<a name="config--filter"></a>
+|         | Filter                                                     |
 | ------- | ---------------------------------------------------------- |
 | Key     | `"filter"`                                                 |
 | Type    | string or array of strings                                 |
 | Values  | `"wallets"`, `"specific"` or (see [cat types](#cat-types)) |
 | Default | rescued                                                    |
 | Example | `"filter": "lunar"`                                        |
-| Notes   | - `"filter": "wallets"` requires another parameter [`"wallets"`](#wallets) <br> - `"filter": "specific"` requires another parameter [`"cat"`](#cat) or [`"cats"`](#cats)  |
+| Notes   | - `"filter": "wallets"` requires another parameter [`"wallets"`](#config-wallets) <br> - `"filter": "specific"` requires another parameter [`"cat"`](#config-cat) or [`"cats"`](#config-cats)  |
   
-#### 2. Cat
-
-|         |                                                                 |
-| ------- | --------------------------------------------------------------- |
-| Key     | `"cat"`                                                         |
-| Type    | string (catId) or number (rescueIndex)                          |
-| Values  | catId (e. g. `"0x0012345678"`) or rescueIndex (e. g. `0–25439`) |
-| Example | `"cat": "0x00d51b8121"`                   |
-| Notes   | - requires `"filter": "specific"` <br> - `"cat"`overrides `"cats"` |
+<a name="config--cat"></a>
+|         | Cat                                                                |
+| ------- | ------------------------------------------------------------------ |
+| Key     | `"cat"`                                                            |
+| Type    | string (catId) or number (rescueIndex)                             |
+| Values  | catId (e. g. `"0x0012345678"`) or rescueIndex (e. g. `0–25439`)    |
+| Example | `"cat": "0x00d51b8121"`                                            |
+| Notes   | - requires [`"filter": "specific"`](#config-filter) <br> - `"cat"` overrides [`"cats"`](#config-cats) |
   
-#### 3. Cats
-
-|         |                                                       |
-| ------- | ----------------------------------------------------- |
-| Key     | `"cats"`                                              |
-| Type    | string (catId), number (rescueIndex) or array of both |
-| Values  | catId or rescueIndex                                  |
-| Example | `"cats": [392, "0x00d8523a53"]` |
-| Notes   | - requires `"filter": "specific"` <br> - `"cat"`overrides `"cats"` |
+<a name="config--cats"></a>
+|         | Cats                                                                                                 |
+| ------- | ---------------------------------------------------------------------------------------------------- |
+| Key     | `"cats"`                                                                                             |
+| Type    | string (catId), number (rescueIndex) or array of both                                                |
+| Values  | catId or rescueIndex                                                                                 |
+| Example | `"cats": [392, "0x00d8523a53"]`                                                                      |
+| Notes   | - requires [`"filter": "specific"`](#config-filter) <br> - [`"cat"`](#config-cat) overrides `"cats"` |
   
-#### 4. Wallets
-
-|         |                                           |
-| ------- | ----------------------------------------- | 
-| Key     | `"wallets"`                               |
-| Type    | string or array of strings                |
-| Values  | walletId (e.g. `"0x..."`)                 |
-| Example | `"wallets": "0x..."` |
+<a name="config--wallets"></a>
+|         | Wallets                                                              |
+| ------- | -------------------------------------------------------------------- | 
+| Key     | `"wallets"`                                                          |
+| Type    | string or array of strings                                           |
+| Values  | walletId (e.g. `"0x..."`)                                            |
+| Example | `"wallets": "0x..."`                                                 |
 | Notes   | - requires `"filter": "wallets"` <br> - only finds acclimatized cats |
   
-#### 5. Background Color
-
-|         |                                          |
+<a name="config--background-color"></a>
+|         | Background Color                         |
 | ------- | ---------------------------------------- |
 | Key     | `"background"`                           |
 | Type    | string                                   |
@@ -88,18 +83,18 @@ The following parameters can optionally be added to the config.
 | Default | inverted glow color of the displayed cat |
 | Example | `"background": "black"`                  |
 
-#### 6. Background Image
 
-|         |                                                                       |
-| ------- | --------------------------------------------------------------------- |
-| Key     | `"backgroundImage"`                                                   |
-| Type    | string                                                                |
-| Values  | a valid link to a jpg or png                                          |
-| Example | `"backgroundImage": "https://mooncat.community/img/bgstarssmall.png"` |
+<a name="config--background-image"></a>
+|         | Background Image                                                                             |
+| ------- | -------------------------------------------------------------------------------------------- |
+| Key     | `"backgroundImage"`                                                                          |
+| Type    | string                                                                                       |
+| Values  | a valid link to a jpg or png                                                                 |
+| Example | `"backgroundImage": "https://mooncat.community/img/bgstarssmall.png"`                        |
 | Note    | image is downloaded each time the widget is updated, as cashing has not yet been implemented |
 
 ### Cat Types
-This is the categorization of all cats as used in the optional [filter parameter](#filter) of the [configuration](#config).
+This is the categorization of all cats as used in the config parameter [filter](#config-filter).
 
 | Type             | Description             |
 | ---------------- | ----------------------- |
