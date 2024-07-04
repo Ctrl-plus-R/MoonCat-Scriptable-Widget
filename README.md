@@ -23,9 +23,9 @@ You can also set a background for the widget.
    - search “Scriptable”
    - all sizes work, but small and large look best
 3. click widget to reach the settings
-   - choose mooncat-scriptable-widget as script
-   - it probably doesn’t matter what to choose as interaction
-   - if you want to customize your widget, add [config](#config) to parameter field
+   - Script: mooncat-scriptable-widget
+   - When Interacting: Open App
+   - Parameter: optionally add [config](#config) to customize your widget
 
 ## CONFIG
 To customize your widgets you need to enter a configuration in the parameter field of your widget settings.
