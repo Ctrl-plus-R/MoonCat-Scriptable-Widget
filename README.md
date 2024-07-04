@@ -71,13 +71,13 @@ The config can consist of the following parameters:
 | Notes   | - requires [`"filter": "wallets"`](#config-filter) <br> - only finds acclimated cats |
   
 <a name="config-background-color"></a>
-|          | Background Color                                   |
-| -------- | :------------------------------------------------- |
-| Key      | `"background"`                                     |
-| Type     | string                                             |
-| Values   | `"black"`, `"white"`, `"blue"`, `"brown"`, `"cyan"`, `"darkGray"`, `"gray"`, `"green"`, `"lightGray"`, `"magenta"`, `"orange"`, `"purple"`, `"red"`, `"yellow"`, [hex string](https://www.color-hex.com/) (3- or 6-digit) |
-| Default  | inverted glow color of the displayed cat           |
-| Examples | `"background": "black"`, `"background": "#dfbcbb"` |
+|          | Background Color                                             |
+| -------- | :----------------------------------------------------------- |
+| Key      | `"backgroundColor"`                                          |
+| Type     | string                                                       |
+| Values   | `"black"`, `"white"`, `"blue"`, `"brown"`, `"cyan"`, `"darkGray"`, `"gray"`, `"green"`, `"lightGray"`, `"magenta"`, `"orange"`, `"purple"`, `"red"`, `"yellow"`, [hex string](https://www.color-hex.com/) (3 or 6 digits) |
+| Default  | inverted glow color of the displayed cat                     |
+| Examples | `"backgroundColor": "black"`, `"backgroundColor": "#dfbcbb"` |
 
 
 <a name="config-background-image"></a>
@@ -87,7 +87,7 @@ The config can consist of the following parameters:
 | Type    | string                                                                                       |
 | Values  | a valid link to a jpg or png                                                                 |
 | Example | `"backgroundImage": "https://mooncat.community/img/bgstarssmall.png"`                        |
-| Note    | image is downloaded each time the widget is updated, as cashing has not yet been implemented |
+| Note    | - image is downloaded each time the widget is updated, as cashing has not yet been implemented <br> - transparent image can be combined with [backgroundColor](#config-background-color) |
 
 ### Cat Types
 This is the categorization of all cats as used in the config parameter [filter](#config-filter).
@@ -124,7 +124,7 @@ To access wallets you need a Moralis API key.
 ```json
 {
   "moralisApiKey": "YOUR_API_KEY",
-  "background": "black",
+  "backgroundColor": "black",
   "filter": "wallets",
   "wallets": ["0x...", "0x..."]
 }
