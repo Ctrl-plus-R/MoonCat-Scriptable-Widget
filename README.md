@@ -49,7 +49,7 @@ The config can consist of the following parameters:
 | ------- | :-------------------------------------------------------------------- |
 | Key     | `"moralisApiKey"`                                                     |
 | Type    | string                                                                |
-| Example | `"moralisApiKey": "YOUR_MORALIS_API_KEY"`                             |
+| Example | `"moralisApiKey": "YOUR_API_KEY"`                                     |
 | Note    | only needed in order to use the [`"wallets"` filter](#config-wallets) |
 
 <a name="config-cats"></a>
@@ -59,15 +59,15 @@ The config can consist of the following parameters:
 | Type    | string (catId), number (rescueIndex) or array of both |
 | Values  | catId or rescueIndex                                  |
 | Example | `"cats": [392, "0x00d8523a53"]`                       |
-| Note    | requires [`"filter": "cats"`](#config-filter)     |
+| Note    | requires [`"filter": "cats"`](#config-filter)         |
   
 <a name="config-wallets"></a>
-|         | Wallets                                                                                |
-| ------- | :------------------------------------------------------------------------------------- |
-| Key     | `"wallets"`                                                                            |
-| Type    | string or array of strings                                                             |
-| Values  | walletId (40-digit hex string, e.g. `"0x..."`)                                                            |
-| Example | `"wallets": "0x..."`                                                                   |
+|         | Wallets                                                                              |
+| ------- | :----------------------------------------------------------------------------------- |
+| Key     | `"wallets"`                                                                          |
+| Type    | string or array of strings                                                           |
+| Values  | walletId (40-digit hex string, e.g. `"0x..."`)                                       |
+| Example | `"wallets": "0x..."`                                                                 |
 | Notes   | - requires [`"filter": "wallets"`](#config-filter) <br> - only finds acclimated cats |
   
 <a name="config-background-color"></a>
