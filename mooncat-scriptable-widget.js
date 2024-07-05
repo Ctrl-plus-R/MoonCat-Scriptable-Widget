@@ -59,7 +59,7 @@ async function main() {
   // Title
   widgetData.title = getTitleFromTraits(traits);
 
-  // TODO: description (getDescription)
+  widgetData.description = getDescriptionFromTraits(traits);
 
   // Colors
   widgetData.shadowColor = getGlowColorFromTraits(traits);
@@ -353,7 +353,7 @@ function getTitleFromTraits(traits) {
   return res.join(" - ");
 }
 
-function getDescription(traits) {
+function getDescriptionFromTraits(traits) {
   // Cat descriptions for large widget
   const LUNAR_DESCRIPTION_SUFFIX = [
     ".",
@@ -461,7 +461,7 @@ function getDescription(traits) {
 
     res += ` ${
       isCharacter ? character : "MoonCat"
-    } was never rescued${getRandomElement(LUNAR_DESCRIPTION_SUFFIX)}${
+    } was never rescued${getRandomElementFromArray(LUNAR_DESCRIPTION_SUFFIX)}${
       isGarf && Math.random() < 0.5 ? " Lasagna?" : ""
     }`;
     return res;
