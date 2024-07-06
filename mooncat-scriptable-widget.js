@@ -4,7 +4,7 @@
 
 // ======================================== C O N S T A N T S
 
-// ==================== E N D P O I N T S
+// ==================== E N D   P O I N T S
 
 const MORALIS_BASE_URL = "https://deep-index.moralis.io/api/v2";
 const MC_BASE_URL = "https://api.mooncat.community";
@@ -71,7 +71,7 @@ async function main() {
 
   //Background Image
   if (userConfig.backgroundImage) {
-    widgetData.backgroundImage = fetchBackgroundImage(
+    widgetData.backgroundImage = await fetchBackgroundImage(
       userConfig.backgroundImage
     );
   }
@@ -419,7 +419,7 @@ function getDescriptionFromTraits(traits) {
   // General trait data
   const isGenesis = details.genesis;
   const isLunar = classification === "lunar";
-  const isNamed = details.isNamed;
+  const isNamed = details.isNamed && details.isNamed !== "No";
   const name = isNamed ? details.name : "";
   const isPale = details.isPale;
   const color = details.hue === "skyBlue" ? "sky blue" : details.hue;
